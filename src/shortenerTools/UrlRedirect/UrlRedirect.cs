@@ -52,7 +52,7 @@ namespace Cloud5mins.Function
             {
                 log.LogInformation("Bad Link, resorting to fallback.");
             }
-
+ 
             var res = req.CreateResponse(HttpStatusCode.Redirect);
             res.Headers.Add("Location", redirectUrl);
             return res;
